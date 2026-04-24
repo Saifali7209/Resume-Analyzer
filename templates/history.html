@@ -1,0 +1,43 @@
+{% extends "base.html"%}
+{% block content%}
+
+<h2>your History</h2>
+{% for r in reports %}
+<div class="card">
+    <p><strong>Resume Preview</strong></p>
+    <p>{{ r.resume[:150] }}</p>
+
+    <hr>
+
+   <h3>Skills</h3>
+    <ul>
+        {% for s in result.get("Skills",[]) %}
+        <li>{{ s }}</li>
+        {% endfor %}
+    </ul>
+
+     <h3>Missing Skills</h3>
+    <ul>
+        {% for s in result.get("missing_Skills",[]) %}
+        <li>{{ s }}</li>
+        {% endfor %}
+    </ul>
+
+     <h3>Roadmap</h3>
+    <ul>
+        {% for s in result.get("Roadmap",[]) %}
+        <li>{{ s }}</li>
+        {% endfor %}
+    </ul>
+
+    <h3>Interivew Questions List</h3>
+    <ul>
+        {% for s in result.get("Interivew_questions",[]) %}
+        <li>{{ s }}</li>
+        {% endfor %}
+    </ul>
+
+
+</div>
+{% endfor %}
+{% endblock %}
