@@ -36,11 +36,7 @@ missing skills, roadmap, and interview questions.
 4. Add your API key in `.env` file:
 5. Run the project:
 6. Open in browser:
-7. 
 ---
-
- 📷 Screenshots
-
 
 📌 Future Scope
 - File upload (PDF/DOCX)
@@ -52,3 +48,6 @@ Saif Ali
 B.Tech CSE (6th Semester)
 ⭐ Support
 If you like this project, give it a ⭐ on GitHub!
+---
+Conclusion
+This project shows how AI can be used to analyze resumes and provide useful insights like skills, missing skills, and career guidance. It is a simple step towards building smarter career tools.
